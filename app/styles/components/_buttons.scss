@@ -1,0 +1,121 @@
+.btn {
+  border-radius: 0;
+  font-weight: 700;
+  font-size: (15/10)+rem;
+  text-transform: uppercase;
+  color: $brand-secondary;
+  border: 2px solid $brand-secondary;
+  letter-spacing: 3px;
+  text-align: center;
+  background: transparent;
+  line-height: 1;
+  vertical-align: bottom;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    border: 2px solid $brand-primary;
+    color: $brand-primary;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: 0;
+}
+
+.btn-sm {
+  min-width: 194px;
+  min-height: 50px;
+  padding-right: 34px;
+  padding-left: 34px;
+}
+
+.btn-lg {
+  min-width: 250px;
+  min-height: 66px;
+  padding-right: 59px;
+  padding-left: 59px;
+}
+
+.btn-link {
+  border: 0;
+  padding: 0;
+  color: $brand-primary;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: 500;
+  position: relative;
+  margin-top: 40px;
+
+  &:after {
+    content: url('../images/play_icon.png');
+    display: inline-block;
+    position: absolute;
+    top: -3px;
+    right: -20px;
+  }
+
+  &.btn:hover,
+  &.btn:focus,
+  &.btn:active {
+    border: 0 !important;
+    text-decoration: none !important;
+  }
+}
+
+.btn-more {
+  border: 0;
+  padding: 10px 0 0;
+  color: $gray;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: (15/10)+rem;
+  line-height: 2;
+
+  &:after {
+    content: "\24";
+    color: $brand-primary;
+    font-family: 'ElegantIcons';
+    position: relative;
+    top: 2px;
+    left: 5px;
+  }
+
+  &.btn:hover,
+  &.btn:focus,
+  &.btn:active {
+    border: 0 !important;
+    text-decoration: none !important;
+  }
+}
+
+.request-btn {
+  border: 0;
+  background-color: $gray-darker;
+  letter-spacing: normal;
+  float: right;
+  padding: 15px 25px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 0;
+    background-color: $gray-darker;
+    color: $brand-primary;
+  }
+}
+
+.footer-content {
+  .btn {
+    padding: 0;
+    line-height: 3;
+    width: 140px;
+    min-width: 140px;
+    max-height: 50px;
+  }
+}

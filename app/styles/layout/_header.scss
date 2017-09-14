@@ -1,0 +1,98 @@
+.banner {
+  background: url('../images/header.jpg') no-repeat center top;
+  width: 100%;
+  min-height: 245px;
+}
+
+.top-logo {
+  float: left;
+}
+
+.brand {
+  display: block;
+}
+
+.contact-details {
+}
+
+.menu-main-container {
+  ul {
+    padding-bottom: 30px;
+
+    li {
+      line-height: 1;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        position: relative;
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        font-size: (16/10)+rem;
+        font-weight: 500;
+        padding: 10px 25px;
+        border: 1px solid transparent;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border: 1px solid $brand-secondary;
+          color: $brand-secondary;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          border: 1px solid $brand-secondary;
+          color: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+.navbar-default {
+  background-color: rgba($gray-darker, 0.8);
+  border-bottom: 2px solid $brand-primary;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+
+  .navbar-toggle {
+    border-color: $gray;
+    border-radius: 0;
+    margin-top: 17px;
+    margin-bottom: 17px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $gray-light;
+    }
+
+    .icon-bar {
+      height: 1px;
+    }
+  }
+}
+
+.header-contacts {
+  position: absolute;
+  right: 40px;
+  top: 55px;
+
+  a {
+    color: $brand-secondary;
+    font-weight: 700;
+  }
+
+  a:first-child:after {
+    content: '|';
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+}

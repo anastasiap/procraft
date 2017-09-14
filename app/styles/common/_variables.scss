@@ -1,0 +1,26 @@
+$icon-font-path: '../fonts/';
+
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+$gray-darker:            #292828;
+$gray-dark:              #50504f;
+$gray:                   #666666;
+$gray-light:             #999999;
+$gray-lighter:           #efece5;
+
+$brand-primary:          #983c2c;
+$brand-secondary:        #c2b38c;
+$secondary-light:        #efece5;
+
+$form-color:             #bfbdbd;
+
+// Mixins
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
